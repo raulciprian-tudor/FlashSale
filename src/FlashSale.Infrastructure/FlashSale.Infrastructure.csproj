@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlashSale.Application\FlashSale.Application.csproj" />
+  </ItemGroup>
+
+</Project>
