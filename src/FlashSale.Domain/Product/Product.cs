@@ -5,7 +5,7 @@ namespace FlashSale.Domain.Products;
 public class Product
 {
     public Guid Id { get; private set; }
-    public string Name { get; private set; } = "";
+    public string Name { get; private set; }
     public decimal Price { get; private set; }
     public int StockQuantity { get; private set; }
 
@@ -23,7 +23,7 @@ public class Product
 
         if (stockQuantity < 0)
         {
-            throw new DomainException("Initial Stock cannot be negative.");
+            throw new DomainException("Initial stock cannot be negative.");
         }
 
         Id = Guid.NewGuid();
